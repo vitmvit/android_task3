@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ContactStyle">
+        <item name="android:textColor">#696969</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:drawableLeft">@drawable/ic_face_black_24dp</item>
+    </style>
+    <style name="BoldStyleText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="NameContact">
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="InfoContact">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

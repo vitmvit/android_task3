@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeToolbar">16sp</dimen>
+    <dimen name="layoutMargin">4dp</dimen>
+    <dimen name="textSizeMainList">16dp</dimen>
+    <dimen name="card_corner_radius_35">35dp</dimen>
+    <dimen name="card_corner_radius_40">40dp</dimen>
+</resources>

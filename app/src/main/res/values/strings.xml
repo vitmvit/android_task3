@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HOME TASK 3</string>
+    <string name="select_contact">Выбрать контакт</string>
+    <string name="show_contact">Показать контакты</string>
+    <string name="show_from_sp">Показать из SP</string>
+    <string name="show_in_notification">Показать в Notification</string>
+    <string name="contact">Contact</string>
+    <string name="previous">Previous</string>
+    <string name="exit">Exit</string>
+    <string name="info"></string>
+    <string name="chanel_id">my_channel_01</string>
+    <string name="chanel_name">my_channel</string>
+    <string name="empty_snackbar">Snackbar пуст</string>
+    <string name="empty_db">База данных пуста</string>
+    <string name="empty_sr">SharedPreferences пуст</string>
+    <string name="copy_contact">Контакт уже сохранён</string>
+    <string name="save_contact">Сохранение успешно</string>
+    <string name="error_contact">Ошибка сохранения</string>
+</resources>
