@@ -17,15 +17,15 @@ import androidx.fragment.app.FragmentTransaction;
 import com.clevertec.task3.R;
 import com.clevertec.task3.dao.ContactDao;
 import com.clevertec.task3.database.AppDatabase;
+import com.clevertec.task3.interfaces.OnBackPressedListener;
 import com.clevertec.task3.model.Contact;
 import com.clevertec.task3.singleton.ConnectionSingleton;
 
 import java.util.ArrayList;
 
-public class SelectContactFragment extends Fragment {
+public class SelectContactFragment extends Fragment implements OnBackPressedListener {
 
     private final AppDatabase appDatabase = ConnectionSingleton.getInstance(null).getAppDatabase();
-    private final String notSpecified = "Не указан";
 
     public static SelectContactFragment newInstance() {
         return new SelectContactFragment();
@@ -130,7 +130,7 @@ public class SelectContactFragment extends Fragment {
         String selection = displayName + " like'%" + name + "%'";
         String[] array = new String[]{arrayElement};
         Cursor cursor = context.getContentResolver().query(uri, array, selection, null, null);
-        String result = notSpecified;
+        String result = "Не указан";
         if (cursor.moveToFirst()) {
             result = cursor.getString(0);
         }
@@ -141,5 +141,10 @@ public class SelectContactFragment extends Fragment {
     private enum TypeInfo {
         PHONE,
         EMAIL
+    }
+
+    @Override
+    public void onBackPressed() {
+        toMainFragment();
     }
 }

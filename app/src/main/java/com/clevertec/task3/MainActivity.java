@@ -2,10 +2,12 @@ package com.clevertec.task3;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.room.Room;
 import com.clevertec.task3.database.AppDatabase;
 import com.clevertec.task3.fragment.MainFragment;
+import com.clevertec.task3.interfaces.OnBackPressedListener;
 import com.clevertec.task3.singleton.ConnectionSingleton;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,5 +31,22 @@ public class MainActivity extends AppCompatActivity {
                 .beginTransaction()
                 .add(R.id.container, MainFragment.newInstance())
                 .commit();
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        FragmentManager fm = getSupportFragmentManager();
+        OnBackPressedListener backPressedForFragments = null;
+
+        for (Fragment fragment : fm.getFragments()) {
+            if (fragment instanceof OnBackPressedListener) {
+                backPressedForFragments = (OnBackPressedListener) fragment;
+                break;
+            }
+        }
+        if (backPressedForFragments != null) {
+            backPressedForFragments.onBackPressed();
+        }
     }
 }

@@ -24,6 +24,7 @@ import com.clevertec.task3.MainActivity;
 import com.clevertec.task3.R;
 import com.clevertec.task3.dao.ContactDao;
 import com.clevertec.task3.database.AppDatabase;
+import com.clevertec.task3.interfaces.OnBackPressedListener;
 import com.clevertec.task3.model.Contact;
 import com.clevertec.task3.singleton.ConnectionSingleton;
 import com.google.android.material.snackbar.Snackbar;
@@ -33,7 +34,7 @@ import java.util.Objects;
 
 import static android.content.Context.MODE_PRIVATE;
 
-public class MainFragment extends Fragment {
+public class MainFragment extends Fragment implements OnBackPressedListener {
     private static final int NOTIFICATION_ID = 234;
     private static final int REQUEST_CODE_READ_CONTACTS = 1;
     private static final String NAME_SP = "MySharedPreferences";
@@ -170,6 +171,11 @@ public class MainFragment extends Fragment {
         } else {
             Toast.makeText(getActivity(), R.string.empty_sr, Toast.LENGTH_SHORT).show();
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        System.exit(0);
     }
 
     @Override
