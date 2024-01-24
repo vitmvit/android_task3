@@ -11,11 +11,11 @@
 - по кнопке “Показать из **SP**” показать номер телефона не на форме, а в **SnackBar**
 - добавить еще одну кнопку “Показать в **Notification**”, по нажатию найти в базе данных контакт, номер телефона которого сохранен в **SharedPreferences** и отобразить имя и фамилию контакта в **Notification**
 # Материалы 
-    1. **[Создание пользовательского интерфейса с помощью ConstraintLayout](https://developer.android.com/training/constraint-layout)**
-    2. **[Получить список контактов](https://developer.android.com/training/contacts-provider/retrieve-names)**
-    3. **[Получить сведения о контакте](https://developer.android.com/training/contacts-provider/retrieve-details)**
-    4. **[Сохранение данных в локальной базе данных с помощью Room](https://developer.android.com/training/data-storage/room)**
-    5. **[Dialogs](https://developer.android.com/guide/topics/ui/dialogs?hl=ru)**
-    6. **[Сохранение данных пары "ключ-значение"](https://developer.android.com/training/data-storage/shared-preferences)**
-    7. **[Snackbars](https://material.io/components/snackbars/android)**
-    8. **[Создание уведомления](https://developer.android.com/training/notify-user/build-notification)**
+1. **[Создание пользовательского интерфейса с помощью ConstraintLayout](https://developer.android.com/training/constraint-layout)**
+2. **[Получить список контактов](https://developer.android.com/training/contacts-provider/retrieve-names)**
+3. **[Получить сведения о контакте](https://developer.android.com/training/contacts-provider/retrieve-details)**
+4. **[Сохранение данных в локальной базе данных с помощью Room](https://developer.android.com/training/data-storage/room)**
+5. **[Dialogs](https://developer.android.com/guide/topics/ui/dialogs?hl=ru)**
+6. **[Сохранение данных пары "ключ-значение"](https://developer.android.com/training/data-storage/shared-preferences)**
+7. **[Snackbars](https://material.io/components/snackbars/android)**
+8. **[Создание уведомления](https://developer.android.com/training/notify-user/build-notification)**
